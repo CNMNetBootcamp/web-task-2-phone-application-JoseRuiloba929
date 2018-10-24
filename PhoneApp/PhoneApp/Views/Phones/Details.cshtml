@@ -1,0 +1,78 @@
+﻿@model PhoneApp.Models.Phone
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Phone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.batteryLife)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.batteryLife)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LaunchDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LaunchDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneWeight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phoneWeight)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneOS)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phoneOS)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneCPU)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phoneCPU)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneDisplay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phoneDisplay)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneRating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phoneRating)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneImage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.phoneImage)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.iD">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
